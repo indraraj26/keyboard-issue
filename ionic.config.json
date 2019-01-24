@@ -1,0 +1,7 @@
+{
+  "name": "keyboard-issue",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
