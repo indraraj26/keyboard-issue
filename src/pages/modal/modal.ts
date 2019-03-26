@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { NavController, NavParams, ViewController , IonicPage} from 'ionic-angular';
 import { Keyboard } from '@ionic-native/keyboard';
 
-
+@IonicPage()
 @Component({
   selector: 'page-modal',
   templateUrl: 'modal.html',
@@ -15,12 +15,14 @@ export class ModalPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalPage');
-    this._keyboard.show();// for android
-    this.myInput.setFocus();
   }
 
 
   ionViewDidEnter() {
+    setTimeout(() => {
+      this._keyboard.show();// for android
+      this.myInput.setFocus();
+      },500);
   }
 
   dismiss() {

@@ -1,3 +1,20 @@
 page-home {
+   
+  div {
+    background-color:white !important;
+    .select-layout {
+      background-color: white !important;
+      border: transparent !important;
+      width: 100% !important;
+      border-bottom: 1px solid grey !important;
+      padding-bottom: 10px !important;
+      padding-left: 5px !important;
+      margin-top: 9px !important;
+    }
+  }
 
+  option {
+    background-color: white !important;
+  }
+ 
 }
